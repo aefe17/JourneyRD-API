@@ -1848,24 +1848,26 @@
     ]
   },
   "packageFolders": {
-    "/Users/andresfanjul/.nuget/packages/": {}
+    "C:\\Users\\andre\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/andresfanjul/Personal/API/Domain/Domain.csproj",
+      "projectUniqueName": "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj",
       "projectName": "Domain",
-      "projectPath": "/Users/andresfanjul/Personal/API/Domain/Domain.csproj",
-      "packagesPath": "/Users/andresfanjul/.nuget/packages/",
-      "outputPath": "/Users/andresfanjul/Personal/API/Domain/obj/",
+      "projectPath": "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj",
+      "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\andre\\source\\repos\\API\\Domain\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/andresfanjul/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -1909,7 +1911,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }

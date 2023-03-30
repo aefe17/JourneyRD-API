@@ -16,13 +16,17 @@ namespace API.Extensions
             services.AddSwaggerGen();
             services.AddDbContext<DataContext>(opt =>
             {
-                opt.UseSqlite(config.GetConnectionString("DefaultConnection"));
+                 opt.UseSqlite(config.GetConnectionString("DefaultConnection"));
             });
             services.AddCors(Opt =>
             {
                 Opt.AddPolicy("CorsPolicy", policy =>
                 {
-                    policy.AllowAnyMethod().AllowAnyHeader().AllowCredentials().WithExposedHeaders("WWW-Authenticate").WithOrigins("");
+                    policy.AllowAnyMethod()
+                          .AllowAnyHeader()
+                          .AllowCredentials()
+                          .WithExposedHeaders("WWW-Authenticate")
+                          .WithOrigins("");
                 });
             });
 

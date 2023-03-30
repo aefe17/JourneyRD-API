@@ -11,8 +11,8 @@ using Persistence;
 namespace Persistence.Migrations
 {
     [DbContext(typeof(DataContext))]
-    [Migration("20230330050338_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20230330174613_SQLiteMigration")]
+    partial class SQLiteMigration
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

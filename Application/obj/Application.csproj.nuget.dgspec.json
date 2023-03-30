@@ -1,36 +1,38 @@
 {
   "format": 1,
   "restore": {
-    "/Users/andresfanjul/Personal/API/Application/Application.csproj": {}
+    "C:\\Users\\andre\\source\\repos\\API\\Application\\Application.csproj": {}
   },
   "projects": {
-    "/Users/andresfanjul/Personal/API/Application/Application.csproj": {
+    "C:\\Users\\andre\\source\\repos\\API\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andresfanjul/Personal/API/Application/Application.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\API\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/andresfanjul/Personal/API/Application/Application.csproj",
-        "packagesPath": "/Users/andresfanjul/.nuget/packages/",
-        "outputPath": "/Users/andresfanjul/Personal/API/Application/obj/",
+        "projectPath": "C:\\Users\\andre\\source\\repos\\API\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andre\\source\\repos\\API\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/andresfanjul/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/andresfanjul/Personal/API/Domain/Domain.csproj": {
-                "projectPath": "/Users/andresfanjul/Personal/API/Domain/Domain.csproj"
+              "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj"
               },
-              "/Users/andresfanjul/Personal/API/Persistence/Persistence.csproj": {
-                "projectPath": "/Users/andresfanjul/Personal/API/Persistence/Persistence.csproj"
+              "C:\\Users\\andre\\source\\repos\\API\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\andre\\source\\repos\\API\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -78,26 +80,28 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/andresfanjul/Personal/API/Domain/Domain.csproj": {
+    "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andresfanjul/Personal/API/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/andresfanjul/Personal/API/Domain/Domain.csproj",
-        "packagesPath": "/Users/andresfanjul/.nuget/packages/",
-        "outputPath": "/Users/andresfanjul/Personal/API/Domain/obj/",
+        "projectPath": "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andre\\source\\repos\\API\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/andresfanjul/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -141,34 +145,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/andresfanjul/Personal/API/Persistence/Persistence.csproj": {
+    "C:\\Users\\andre\\source\\repos\\API\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/andresfanjul/Personal/API/Persistence/Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\API\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "/Users/andresfanjul/Personal/API/Persistence/Persistence.csproj",
-        "packagesPath": "/Users/andresfanjul/.nuget/packages/",
-        "outputPath": "/Users/andresfanjul/Personal/API/Persistence/obj/",
+        "projectPath": "C:\\Users\\andre\\source\\repos\\API\\Persistence\\Persistence.csproj",
+        "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\andre\\source\\repos\\API\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "/Users/andresfanjul/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "/Users/andresfanjul/Personal/API/Domain/Domain.csproj": {
-                "projectPath": "/Users/andresfanjul/Personal/API/Domain/Domain.csproj"
+              "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj"
               }
             }
           }
@@ -183,6 +189,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[7.0.4, )"
+            },
             "Microsoft.EntityFrameworkCore.Sqlite": {
               "target": "Package",
               "version": "[7.0.2, )"
@@ -204,7 +214,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.202/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
