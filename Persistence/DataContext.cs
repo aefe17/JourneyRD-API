@@ -12,7 +12,7 @@ using System.Xml.Linq;
 
 namespace Persistence
 {
-    public class DataContext : IdentityDbContext<AppUser>
+    public class DataContext : DbContext
     {
         public DataContext(DbContextOptions option) : base(option)
         { }
@@ -20,7 +20,6 @@ namespace Persistence
 
         public DbSet<Destinies> Destinies { get; set; }
         public DbSet<Localities> Localities { get; set; }
-        public DbSet<Comment> Comments { get; set; }
         public DbSet<Score> Scores { get; set; }
 /*
         protected override void OnModelCreating(ModelBuilder builder)

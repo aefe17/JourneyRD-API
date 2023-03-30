@@ -13,7 +13,7 @@ namespace API.Services
         {
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, user.username),
+                new Claim(ClaimTypes.Name, user.firstName),
                 new Claim(ClaimTypes.NameIdentifier, user.Id),
                 new Claim(ClaimTypes.Email, user.Email)
             };

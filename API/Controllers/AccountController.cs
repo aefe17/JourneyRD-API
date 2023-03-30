@@ -34,7 +34,7 @@ namespace API.Controllers
             {
                 return new UserDto
                 {
-                    DisplayName = user.username,
+                    DisplayName = user.firstName,
                     Token = tokenService.CreateToken(user),
                     Username = user.UserName
                 };
@@ -53,7 +53,6 @@ namespace API.Controllers
 
             var user = new AppUser
             {
-                username = registerDto.userName,
                 firstName = registerDto.firstName,
                 lastName = registerDto.lastName,
                 Email = registerDto.email,
@@ -65,7 +64,7 @@ namespace API.Controllers
             {
                 return new UserDto
                 {
-                    DisplayName = user.username,
+                    DisplayName = registerDto.userName,
                     Token = tokenService.CreateToken(user),
                     Username = user.UserName
                 };
