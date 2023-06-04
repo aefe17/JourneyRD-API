@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\andre\\source\\repos\\API\\Application\\Application.csproj": {}
+    "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Application\\Application.csproj": {}
   },
   "projects": {
-    "C:\\Users\\andre\\source\\repos\\API\\Application\\Application.csproj": {
+    "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\API\\Application\\Application.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "C:\\Users\\andre\\source\\repos\\API\\Application\\Application.csproj",
+        "projectPath": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\source\\repos\\API\\Application\\obj\\",
+        "outputPath": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj"
+              "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Domain\\Domain.csproj"
               },
-              "C:\\Users\\andre\\source\\repos\\API\\Persistence\\Persistence.csproj": {
-                "projectPath": "C:\\Users\\andre\\source\\repos\\API\\Persistence\\Persistence.csproj"
+              "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Persistence\\Persistence.csproj": {
+                "projectPath": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Persistence\\Persistence.csproj"
               }
             }
           }
@@ -80,18 +80,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj": {
+    "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj",
+        "projectPath": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\source\\repos\\API\\Domain\\obj\\",
+        "outputPath": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -145,18 +145,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\andre\\source\\repos\\API\\Persistence\\Persistence.csproj": {
+    "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Persistence\\Persistence.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\andre\\source\\repos\\API\\Persistence\\Persistence.csproj",
+        "projectUniqueName": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Persistence\\Persistence.csproj",
         "projectName": "Persistence",
-        "projectPath": "C:\\Users\\andre\\source\\repos\\API\\Persistence\\Persistence.csproj",
+        "projectPath": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Persistence\\Persistence.csproj",
         "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\andre\\source\\repos\\API\\Persistence\\obj\\",
+        "outputPath": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Persistence\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -173,8 +173,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj": {
-                "projectPath": "C:\\Users\\andre\\source\\repos\\API\\Domain\\Domain.csproj"
+              "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Domain\\Domain.csproj"
               }
             }
           }
@@ -214,7 +214,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
