@@ -6,8 +6,9 @@ export interface User{
     country: string;
     city: string;
     address: string;
-    birthDate: Date;
+    birthDate: string;
     email: string;
+    token: string;
 }
 
 export interface UserFormValues{
@@ -18,7 +19,7 @@ export interface UserFormValues{
     country: string;
     city: string;
     address: string;
-    birthDate: Date;
+    birthDate: string;
     email: string;
     password: string;
 }
