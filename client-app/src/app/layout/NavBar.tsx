@@ -1,7 +1,11 @@
 import React from 'react';
 import { Button, Container, Menu } from 'semantic-ui-react';
+import { useStore } from '../stores/store';
 
 export default function NavBar(){
+
+    const {destinyStore} = useStore();
+
     return(
         <>
             <Menu inverted fixed='top'>
@@ -13,7 +17,7 @@ export default function NavBar(){
                     <Menu.Item name='Contactos' />
                     <Menu.Item name='Ingresar ' />
                     <Menu.Item>
-                        <Button possitve content='Nuevo Destino' />
+                        <Button possitve content='Nuevo Destino' onClick={() => destinyStore.openForm} />
                     </Menu.Item>
                 </Container>
             </Menu>

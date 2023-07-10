@@ -1,7 +1,6 @@
 import React from 'react';
 import { Destiny } from '../../../app/models/destiny';
-import { Icon, Item, Segment } from 'semantic-ui-react';
-import { format } from 'path';
+import { Button, Icon, Item, Segment } from 'semantic-ui-react';
 
 interface Props{
     destinies: Destiny[];
@@ -42,9 +41,12 @@ export default function DestinyList({destinies} : Props){
                                 </div>
 
                                 <div>
-                                    <Icon name='user outline'/> Maxima Cantidad de Personas: {destiny.maxPeople}
+                                    <Icon name='user outline'/> Maxima cantidad de { destiny.maxPeople === 1 ? 'persona' : 'personas'}: {destiny.maxPeople}
                                 </div>
                             </Item.Description>
+                            <Item.Extra>
+                                <Button floated='right' color='black' content='Mostrar'/>
+                            </Item.Extra>
                         </Item.Content>
                     </Item>
                 ))}
