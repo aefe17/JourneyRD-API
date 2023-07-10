@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "/slZY85sgf2ONAOhH3z10Ry3OV5Qx8hBezWUGauQ8/EMQ8BWWe4qQlWfoWapfssBpMUrBAvF01wG0QwQgFGs2g==",
+  "dgSpecHash": "+g+nscfOpMT7krTSmugr10ryJOohHRRXZILmDXODX+gEdXxms6jIUiTD71EeLP5m2s7jVv22H3p4hZdSok7UmA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Users\\andre\\OneDrive\\Desktop\\Adolfo Tesis\\JourneyRD-API\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.aspnetcore.authentication\\2.2.0\\microsoft.aspnetcore.authentication.2.2.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",

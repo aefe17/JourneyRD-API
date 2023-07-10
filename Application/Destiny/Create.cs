@@ -27,7 +27,8 @@ namespace Application.Destiny
             public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
             {
                 context.Destinies.Add(request.Destinies);
-                await context.SaveChangesAsync();
+                var result = await context.SaveChangesAsync() > 0;
+                if (!result) return Result<Unit>.Failure("Error al crear Destino");
 
                 return Unit.Value;
             }

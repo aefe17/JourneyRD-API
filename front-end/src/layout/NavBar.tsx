@@ -1,15 +1,14 @@
 import React from 'react';
-import {Button, Container, Menu} from 'semantic-ui-react'
+import { Button, Container, Menu } from 'semantic-ui-react'
 
-function NavBar(){
-    return(
+function NavBar() {
+    return (
         <Menu inverted fixed='top'>
-                <img src='' alt='logo' style={{}}/>
+            <img src='/assets/vecteezy_black-and-white-nautical-compass-isolated-on-white_8143436.jpg' alt="logo" style={{ marginRight: '10px', height: '50px' }} />
             <Container>
-                    <Menu.Item name='inicio' to='/' exact header> Inicio</Menu.Item>
-                    <Menu.Item name='' to='/Destinos' exact header> Destinos</Menu.Item>
-                    <Menu.Item name='' to='/Contactos' exact header> Contactos</Menu.Item>
-                    <Button to={'/login'} inverted size='medium' positon='right' content='Iniciar Sesión'/>
+                <Menu.Item name='' to='/' exact header position='right' > Journey RD </Menu.Item>
+                <Menu.Item name='' to='/Destinos' exact header  > Destinos</Menu.Item>
+                <Menu.Item name='' to='/Contactos' exact header > Contactos</Menu.Item>
             </Container>
         </Menu>
     );
