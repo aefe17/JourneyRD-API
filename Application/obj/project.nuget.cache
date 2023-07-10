@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TwX0seJTsXePz6levd1kVuSRliS/+tyD0xXwn8BblAmqdyc5htE51PnHmOPsmurU0kwjm9N+jqvdqLq90alXGw==",
+  "dgSpecHash": "FuQsK6A5pwpgHIp3npNebvdFl5qoYS3B+baJqcY6KhRVXUWWQdY1WewTdKNH+v/TGcainNSS2vcjqZracAgMWw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\andre\\OneDrive\\Desktop\\Adolfo Tesis\\JourneyRD-API\\Application\\Application.csproj",
+  "projectFilePath": "C:\\Users\\andre\\Desktop\\Adolfo-Tesis\\JourneyRD-API\\Application\\Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\automapper\\12.0.0\\automapper.12.0.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.0\\automapper.extensions.microsoft.dependencyinjection.12.0.0.nupkg.sha512",

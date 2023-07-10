@@ -1,4 +1,5 @@
-﻿using Domain;
+﻿using Application.Core;
+using Domain;
 using MediatR;
 using Persistence;
 using System;
@@ -11,12 +12,12 @@ namespace Application.Destiny
 {
     public class Create
     {
-        public class Command : IRequest 
+        public class Command : IRequest<Result<Unit>>
         {
             public Destinies Destinies { get; set; }
         }
 
-        public class Handler : IRequestHandler<Command>
+        public class Handler : IRequestHandler<Command, Result<Unit>>
         {
             private readonly DataContext context;
 
@@ -24,13 +25,15 @@ namespace Application.Destiny
             {
                 this.context = context;
             }
-            public async Task<Unit> Handle(Command request, CancellationToken cancellationToken)
+
+            public async Task<Result<Unit>> Handle(Command request, CancellationToken cancellationToken)
             {
                 context.Destinies.Add(request.Destinies);
-                var result = await context.SaveChangesAsync() > 0;
-                if (!result) return Result<Unit>.Failure("Error al crear Destino");
 
-                return Unit.Value;
+                var result = await context.SaveChangesAsync() > 0;
+                if (!result) return Result<Unit>.Failure("Error al crear Destion");
+
+                return Result<Unit>.Success(Unit.Value);
             }
         }
     }
