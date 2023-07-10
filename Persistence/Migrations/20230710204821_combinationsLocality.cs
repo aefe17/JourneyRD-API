@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace Persistence.Migrations
 {
     /// <inheritdoc />
-    public partial class SQLiteMigration : Migration
+    public partial class combinationsLocality : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -48,6 +48,12 @@ namespace Persistence.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "TEXT", nullable: false),
+                    name = table.Column<string>(type: "TEXT", nullable: false),
+                    category = table.Column<string>(type: "TEXT", nullable: false),
+                    region = table.Column<string>(type: "TEXT", nullable: false),
+                    province = table.Column<string>(type: "TEXT", nullable: false),
+                    PhoneNumber = table.Column<string>(type: "TEXT", nullable: false),
+                    city = table.Column<string>(type: "TEXT", nullable: false),
                     MaxPeople = table.Column<int>(type: "INTEGER", nullable: false),
                     budget = table.Column<double>(type: "REAL", nullable: false),
                     date = table.Column<DateTime>(type: "TEXT", nullable: false)
@@ -58,20 +64,6 @@ namespace Persistence.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Localities",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "TEXT", nullable: false),
-                    Name = table.Column<string>(type: "TEXT", nullable: false),
-                    category = table.Column<string>(type: "TEXT", nullable: false),
-                    expenses = table.Column<double>(type: "REAL", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Localities", x => x.Id);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Comment",
                 columns: table => new
                 {
@@ -79,7 +71,7 @@ namespace Persistence.Migrations
                         .Annotation("Sqlite:Autoincrement", true),
                     Body = table.Column<string>(type: "TEXT", nullable: false),
                     AuthorId = table.Column<string>(type: "TEXT", nullable: true),
-                    LocalityId = table.Column<Guid>(type: "TEXT", nullable: false),
+                    DestiniesId = table.Column<Guid>(type: "TEXT", nullable: false),
                     CreatedAt = table.Column<DateTime>(type: "TEXT", nullable: false)
                 },
                 constraints: table =>
@@ -91,9 +83,9 @@ namespace Persistence.Migrations
                         principalTable: "AppUser",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Comment_Localities_LocalityId",
-                        column: x => x.LocalityId,
-                        principalTable: "Localities",
+                        name: "FK_Comment_Destinies_DestiniesId",
+                        column: x => x.DestiniesId,
+                        principalTable: "Destinies",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -104,7 +96,7 @@ namespace Persistence.Migrations
                 {
                     Id = table.Column<int>(type: "INTEGER", nullable: false)
                         .Annotation("Sqlite:Autoincrement", true),
-                    localityId = table.Column<Guid>(type: "TEXT", nullable: false),
+                    destiniesId = table.Column<Guid>(type: "TEXT", nullable: false),
                     UserId = table.Column<string>(type: "TEXT", nullable: true),
                     Value = table.Column<int>(type: "INTEGER", nullable: false)
                 },
@@ -117,9 +109,9 @@ namespace Persistence.Migrations
                         principalTable: "AppUser",
                         principalColumn: "Id");
                     table.ForeignKey(
-                        name: "FK_Scores_Localities_localityId",
-                        column: x => x.localityId,
-                        principalTable: "Localities",
+                        name: "FK_Scores_Destinies_destiniesId",
+                        column: x => x.destiniesId,
+                        principalTable: "Destinies",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -130,14 +122,14 @@ namespace Persistence.Migrations
                 column: "AuthorId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Comment_LocalityId",
+                name: "IX_Comment_DestiniesId",
                 table: "Comment",
-                column: "LocalityId");
+                column: "DestiniesId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Scores_localityId",
+                name: "IX_Scores_destiniesId",
                 table: "Scores",
-                column: "localityId");
+                column: "destiniesId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Scores_UserId",
@@ -152,16 +144,13 @@ namespace Persistence.Migrations
                 name: "Comment");
 
             migrationBuilder.DropTable(
-                name: "Destinies");
-
-            migrationBuilder.DropTable(
                 name: "Scores");
 
             migrationBuilder.DropTable(
                 name: "AppUser");
 
             migrationBuilder.DropTable(
-                name: "Localities");
+                name: "Destinies");
         }
     }
 }

@@ -19,7 +19,6 @@ namespace Persistence
 
 
         public DbSet<Destinies> Destinies { get; set; }
-        public DbSet<Localities> Localities { get; set; }
         public DbSet<Score> Scores { get; set; }
 /*
         protected override void OnModelCreating(ModelBuilder builder)

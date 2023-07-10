@@ -112,14 +112,14 @@ namespace Persistence.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("TEXT");
 
-                    b.Property<Guid>("LocalityId")
+                    b.Property<Guid>("DestiniesId")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
                     b.HasIndex("AuthorId");
 
-                    b.HasIndex("LocalityId");
+                    b.HasIndex("DestiniesId");
 
                     b.ToTable("Comment");
                 });
@@ -133,37 +133,39 @@ namespace Persistence.Migrations
                     b.Property<int>("MaxPeople")
                         .HasColumnType("INTEGER");
 
-                    b.Property<double>("budget")
-                        .HasColumnType("REAL");
-
-                    b.Property<DateTime>("date")
-                        .HasColumnType("TEXT");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Destinies");
-                });
-
-            modelBuilder.Entity("Domain.Localities", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("TEXT");
-
-                    b.Property<string>("Name")
+                    b.Property<string>("PhoneNumber")
                         .IsRequired()
                         .HasColumnType("TEXT");
+
+                    b.Property<double>("budget")
+                        .HasColumnType("REAL");
 
                     b.Property<string>("category")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<double>("expenses")
-                        .HasColumnType("REAL");
+                    b.Property<string>("city")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<DateTime>("date")
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("name")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("province")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
+
+                    b.Property<string>("region")
+                        .IsRequired()
+                        .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Localities");
+                    b.ToTable("Destinies");
                 });
 
             modelBuilder.Entity("Domain.Score", b =>
@@ -178,14 +180,14 @@ namespace Persistence.Migrations
                     b.Property<int>("Value")
                         .HasColumnType("INTEGER");
 
-                    b.Property<Guid>("localityId")
+                    b.Property<Guid>("destiniesId")
                         .HasColumnType("TEXT");
 
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
 
-                    b.HasIndex("localityId");
+                    b.HasIndex("destiniesId");
 
                     b.ToTable("Scores");
                 });
@@ -196,15 +198,15 @@ namespace Persistence.Migrations
                         .WithMany()
                         .HasForeignKey("AuthorId");
 
-                    b.HasOne("Domain.Localities", "Locality")
+                    b.HasOne("Domain.Destinies", "Destinies")
                         .WithMany("comments")
-                        .HasForeignKey("LocalityId")
+                        .HasForeignKey("DestiniesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Author");
 
-                    b.Navigation("Locality");
+                    b.Navigation("Destinies");
                 });
 
             modelBuilder.Entity("Domain.Score", b =>
@@ -213,18 +215,18 @@ namespace Persistence.Migrations
                         .WithMany()
                         .HasForeignKey("UserId");
 
-                    b.HasOne("Domain.Localities", "locality")
+                    b.HasOne("Domain.Destinies", "destinies")
                         .WithMany()
-                        .HasForeignKey("localityId")
+                        .HasForeignKey("destiniesId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("User");
 
-                    b.Navigation("locality");
+                    b.Navigation("destinies");
                 });
 
-            modelBuilder.Entity("Domain.Localities", b =>
+            modelBuilder.Entity("Domain.Destinies", b =>
                 {
                     b.Navigation("comments");
                 });

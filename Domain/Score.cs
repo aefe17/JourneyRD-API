@@ -9,7 +9,7 @@ namespace Domain
     public class Score
     {
         public int Id { get; set; }
-        public Localities locality { get; set; }
+        public Destinies destinies { get; set; }
         public AppUser User { get; set; }
         public int Value { get; set; }
     }
