@@ -16,5 +16,9 @@ namespace Domain
         public string city { get; set; }
         public string address { get; set; }
         public string gender { get; set; }
+
+        public ICollection<Comment> comments { get; set;} = new List<Comment>();
+
+        // public ICollection<Destinies> favoriteDestiny {get; set;} = new List<Destinies>();
     }
 }
